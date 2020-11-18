@@ -38,11 +38,10 @@ class Home extends React.Component {
   }
 
   handleDropdownChange = (category) => {
-    this.state = {
+    this.setState({
       books: books[category].slice(0, 12),
       categorySelected: category,
-    };
-    console.log(this.state);
+    });
   };
 
   handleSearchQuery = (searchQuery) => {
